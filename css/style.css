@@ -2,10 +2,74 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 html {
     background: url("../images/background.jpg") center / cover;
+}
+
+.nav_bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    min-height: 6vh;
+}
+
+.nav_bar h3 {
+    margin-left: 1rem;
+    letter-spacing: 1.3px;
+    color: #f90d5c;
+    font-size: 24px;
+}
+
+.nav_bar nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 300px;
+    margin-top: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.nav1 {
+    color: #cd4ddb;
+    transition: all 0.5s ease;
+}
+
+.nav2 {
+    color: #1d8db1;
+    transition: all 0.5s ease;
+}
+
+.nav3 {
+    color: #d6d800;
+    transition: all 0.5s ease;
+}
+
+.nav4 {
+    transition: all 0.5s ease;
+}
+
+.nav1:hover, .nav2:hover, .nav3:hover, .nav4:hover {
+    background-color: #e06e26;
+    color: #000;
 }
 
 .intro {
@@ -67,7 +131,9 @@ button a {
     font-size: 18px;
 }
 
-
+.item a {
+    margin-top: auto;
+}
 
 .item img {
     width: 288px;
@@ -123,44 +189,59 @@ button a {
     
 }
 
-.item-1 button {
+
+a.btn {
+    width: 150px;
+    text-decoration: none;
+    margin: auto auto 0;
+    padding: 3px 10px;
+    border-radius: 8px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    height: 30px;
+    text-shadow: 1px 1px 2px #000;
+    transition: all 0.5s ease-in;
+}
+
+.item-1 a.btn  {
     background: #f90d5c;
 }
 
-.item-2 button {
+.item-2 a.btn  {
     background: #d6d800;
     color: #000;
-    /* text-shadow: 1px 1px 2px #fff; */
+    text-shadow: 1px 1px 2px #fff;
+
 }
 
-.item-3 button {
+.item-3 a.btn  {
     background: #cd4ddb;
-
 }
 
-.item-4 button {
+.item-4 a.btn  {
     background: #e06e26;
-
 }
 
-.item-5 button {
+.item-5 a.btn  {
     background: #84c023;
-    /* text-shadow: 1px 1px 2px #fff; */
-    color: #000;
-}
-
-.item-6 button {
-    background: #0092b5;
-
-}
-
-.item-7 button {
-    background: #000;
     color: #000;
     text-shadow: 1px 1px 2px #fff;
+
 }
 
-.item button:hover {
+.item-6 a.btn  {
+    background: #0092b5;
+}
+
+.item-7 a.btn  {
+    background: #000;
+    display: flex;
+    justify-content: center;
+}
+
+.item a.btn:hover {
     background-color: #e06e26;
     color: #000;
     text-shadow: 1px 1px 2px #fff;
@@ -231,16 +312,6 @@ button a {
 
 
 
-.fa-facebook, .fa-instagram, .fa-twitter, .fa-github {
-    font-size: 40px;
-    padding: 1rem;
-    color: #0086b1;
-    cursor: pointer;
-    transition: color 0.6s ease;
-}
-
-
-
 .error h1 {
     color: red;
 }
@@ -250,29 +321,19 @@ button a {
     letter-spacing: 1.1px;
 }
 
-.fa-facebook:hover, .fa-instagram:hover,  .fa-twitter:hover, .fa-github:hover{
-    
-    color: #fff;
 
+
+svg {
+    width: 65px;
+    height: 65px;
+    transition: fill .3s ease-in-out;
 }
 
-.fa-facebook {
-    color: rgb(54, 54, 253);
+
+
+svg:hover {
+    fill: white;
 }
-
-.fa-instagram {
-    color: #84147c;
-}
-
-.fa-twitter {
-    color: #eb6328;
-
-}
-
-.fa-github {
-    color:  #adcf0b;
-}
-
 
 
 @media (min-width: 500px) {
@@ -314,7 +375,41 @@ button a {
         font-size: 40px;
     }
 
+    svg {
+        margin: 0.5rem;
+    }
+    
 
+}
+
+@media (min-width: 630px) {
+    .nav_bar {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav {
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul {
+        margin-right: 2rem;
+        width: 425px;
+        margin-top: 0;
+        max-width: 1200px;
+    }
+
+
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        padding: 7px;
+        text-transform: uppercase;
+        letter-spacing: 1.1px;
+        font-weight: 500;
+        border-radius: 5px;
+    }
 }
 
 
@@ -365,14 +460,17 @@ button a {
         font-size: 38px;
     }
 
-    .fa-facebook, .fa-instagram, .fa-twitter, .fa-github {
-        font-size: 60px;
-        padding: 1.5rem;
-    }
+    
 
     .error button {
         padding: 10px;
         font-size: 16px;
+    }
+
+    svg {
+        margin: 1rem;
+        width: 75px;
+        height: 75px;
     }
 
 }
@@ -404,6 +502,10 @@ button a {
         margin-right: 1rem;
     }
 
+    .nav_bar {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
     
 
 }
