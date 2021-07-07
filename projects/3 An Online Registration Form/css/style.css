@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    color: #2d3945;
+}
+
+
+header {
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #2d3945;
+    padding: 3rem 0;    
+    border-bottom: 1px solid #aaaeb3;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    font-weight: 700;
+}
+
+.intro {
+    text-align: center;
+    padding: 1.5rem 0;
+    border-bottom: #aaaeb3 4px solid;
+    margin: 0 1rem;
+}
+
+.intro h2 {
+    padding: 1.5rem 0;   
+    font-weight: 900; 
+    color: #aaaeb3;
+}
+
+.intro p {
+    padding-bottom: 1.5rem;
+    color: #aaaeb3;
+}
+
+main {
+    background: #2d3945;
+    border-radius: 10px;
+}
+
+form {
+    border-top: #aaaeb3 2px solid;
+    margin: 3px 1rem 0;
+    
+    
+}
+
+fieldset {
+    border: none;
+    padding: 1.5rem 0;
+}
+
+fieldset legend {
+    padding-top: 1.5rem;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: #aaaeb3;
+}
+
+.contact {
+    border-bottom: 2px solid #aaaeb3; 
+}
+
+.contact > * {
+    display: block;
+}
+
+input, select {
+    padding: 1.1rem;
+    margin: 0.5rem auto 1.2rem;
+    border-radius: 5px;
+    border: none;
+    background: #eff0f1;
+}
+
+.contact > input, .contact > select, textarea {
+    width: 100%;
+}
+
+#zip {
+    max-width: 50%;
+    margin-left: 0;
+}
+
+input::placeholder {
+    text-align: right;
+    color: #71767c;
+}
+
+input:focus::placeholder {
+    color: #aaaeb3;
+  }
+
+select:first-of-type {
+    color: #71767c;
+  }
+
+input, select, textarea {
+    transition-property: background, box-shadow, color, outline, border-radius;
+    transition-duration: 0.5s;
+}
+
+input:focus, textarea:focus, select:focus {
+    box-shadow: inset 0 0 0 2px #aaaeb3;
+    background: #2d3945; 
+    color: #aaaeb3;
+    outline: none;
+    border-radius: 5px;
+    
+    
+}
+
+
+
+select option {
+    color: #aaaeb3;
+}
+
+.news_label {
+    display: block;
+    margin-bottom: 1rem;
+    margin-top: 1.2rem;
+}
+
+label {
+    color: #aaaeb3;
+}
+
+textarea {
+    width: 100%;
+    height: 125px;
+    padding: 0.5rem;
+    background: #eff0f1;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+
+button {
+    display: inline-block;
+    width: 100%;
+    height: 75px;
+    border-radius: 5px;
+    background: #4ebbb5;
+    border: none;
+    margin-bottom: 1rem;
+    color: whitesmoke;
+    font-weight: 900;
+    font-size: 1.2rem;
+    letter-spacing: 1.2px;
+}
+
+.radio_btn {
+    padding-left: 20px;
+}
+
+footer {
+    margin: 1rem auto 150px;
+    text-align: center;
+    
+}
+
+footer p {
+    color: #5d6e7f;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    main {
+        width: 80%;
+        margin: auto;
+        max-width: 1024px;
+    }
+
+    .contact label, .contact input, .contact select {
+        display: inline-block;
+        
+    }
+
+    .contact label {
+        width: 20%;
+    }
+
+    .contact input, .contact select {
+        width: 80%;
+        margin-right: -4px;
+        
+        
+        
+    }
+
+    #zip {
+        width: 30%;
+    }
+
+}

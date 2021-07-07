@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
+        <title>The Code Review</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>The code review</h1>
+        </header>
+        <main>
+        
+            <section class="intro">
+                <h2>Signup for our newsletter</h2>
+                <p>Get the latest news on how your code is doing right in your inbox</p>
+            </section>
+            <form action="index.html" method="post">
+                <fieldset class="contact">
+                    <!-- contact info -->
+                    <legend>Contact Information</legend>
+                    <label for="name">Full Name</label>
+                    <input required type="text" id="name" name="user_name" placeholder="Required">
+                    <label for="mail">Email Address</label>
+                    <input required type="email" id="mail" name="user_email" placeholder="Required">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="user_phone" placeholder="555-555-5555">
+                    <label for="address">Street Address</label>
+                    <input type="text" id="address" name="user_address">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="user_city">
+                    <label for="state">State</label>
+                    <!-- select box -->
+                    <select id="state" name="user_state">
+                        <option value="" disabled selected hidden>Choose State</option>
+                        <optgroup label="A">
+                            <option value="alaska">Alaska</option>
+                            <option value="arizona">Arizona</option>
+                        </optgroup>
+                        <optgroup label="C">
+                            <option value="california">California</option>
+                            <option value="colorado">Colorado</option>
+                        </optgroup>
+                        <optgroup label="F">
+                            <option value="florida">Florida</option>
+                        </optgroup>
+                        <optgroup label="O">
+                            <option value="ohio">Ohio</option>
+                            <option value="oklahoma">Oklahoma</option>                        
+                            <option value="oregon">Oregon</option>
+                        </optgroup>
+                    </select>
+                    <!-- zip code  -->
+                    <label for="zip">Zip Code</label>
+                    <input type="text" id="zip" name="user_zip">
+                </fieldset>
+                <fieldset class="newsletter">
+                    <legend>Newsletter</legend>
+                    <!-- checkbox -->
+                    <label class="news_label">Select the newsletter you would like to receive</label>
+                    <input type="checkbox" id="html_news" value="news_html" name="user_subs">
+                    <label class="radio_btn" for="html_news">HTML News</label><br>
+                    <input type="checkbox" id="css_news" value="news_css" name="user_subs">
+                    <label class="radio_btn" for="css_news">CSS News</label><br>
+                    <input type="checkbox" id="javascript_news" value="news_javascript" name="user_subs">
+                    <label class="radio_btn" for="javascript_news">JavaScript News</label>
+                    <!-- radio btn -->
+                    <label class="news_label">Newsletter format</label>
+                    <input type="radio" id="html" value="html" name="user_format">
+                    <label for="html" class="radio_btn">HTML</label><br>
+                    <input type="radio" id="plain" value="plain" name="user_format">
+                    <label for="plain" class="radio_btn">Plain text</label>
+                    <!-- text area -->
+                    <label for="topic" class="news_label">Other topics you'd like to hear about</label>
+                    <textarea id="topic" name="user_topic" placeholder="Tell us here"></textarea>
+                </fieldset>
+                <button type="submit">Sign Up</button> 
+
+            </form>
+        
+        </main>
+        <footer>
+            <p>Copyright The Code Review</p>
+        </footer>
+        
+        
+    </body>
+</html>

@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: url("../images/background.jpg") center / cover;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro h1 {
+    color: #2bb6c6;
+    font-size: 50px;
+    margin-left: 1rem;
+}
+
+.intro img{
+    width: 320px;
+    margin-left: auto;
+    
+}
+
+.projects h1{
+    color: #e5eb9f;
+    font-size: 50px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 1;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+button a {
+    text-decoration: none;
+    color:  white;
+}
+
+.item {
+    width: 300px;
+    margin: 1rem 0.2rem;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    padding: 0.3rem 1rem 1rem;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+}
+
+.item h2 {
+    font-size: 30px;
+}
+
+.item p {
+    font-size: 18px;
+}
+
+
+
+.item img {
+    width: 288px;
+    margin-bottom: auto;
+    margin-left: -12px;
+    border-radius: 5px;
+}
+
+.item button {
+    width: 150px;
+    margin: auto auto 0 ;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 8px;
+    border: none;
+    height: 30px;
+    text-shadow: 1px 1px 2px #000;
+    transition: all 0.5s ease-in;
+}
+
+.item p {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.item-1 {
+    border: 2px solid #f90d5c;
+}
+
+.item-2 {
+    border: 2px solid #d6d800;
+}
+
+.item-3 {
+    border: 2px solid #cd4ddb;
+}
+
+.item-4 {
+    border: 2px solid #e06e26;
+}
+
+.item-5 {
+    border: 2px solid #84c023;
+}
+
+.item-6 {
+    border: 2px solid #0092b5;
+}
+
+.item-7 {
+    border: 2px solid #fff;
+    
+}
+
+.item-1 button {
+    background: #f90d5c;
+}
+
+.item-2 button {
+    background: #d6d800;
+    color: #000;
+    /* text-shadow: 1px 1px 2px #fff; */
+}
+
+.item-3 button {
+    background: #cd4ddb;
+
+}
+
+.item-4 button {
+    background: #e06e26;
+
+}
+
+.item-5 button {
+    background: #84c023;
+    /* text-shadow: 1px 1px 2px #fff; */
+    color: #000;
+}
+
+.item-6 button {
+    background: #0092b5;
+
+}
+
+.item-7 button {
+    background: #000;
+    color: #000;
+    text-shadow: 1px 1px 2px #fff;
+}
+
+.item button:hover {
+    background-color: #e06e26;
+    color: #000;
+    text-shadow: 1px 1px 2px #fff;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+.about h1{
+    color: #84c023;
+    font-size: 50px;
+    margin-left: 1rem;
+}
+
+.about img {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.about p {
+    color: #e06e26;
+
+    padding: 0 1rem 1rem;
+}
+
+.about p:last-child {
+    color: #0086b1;
+}
+
+.contact {
+    height: 40vh;
+}
+
+.contact h1 {
+    font-size: 50px;
+    color: #e5246b;
+    margin-right: 1rem;
+    text-align: right;
+}
+
+
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 100vh;
+}
+
+.fa-exclamation-triangle {
+    font-size: 60px;
+    padding: 1rem;
+    color: red;
+}
+
+.error h1, .error h2{
+    padding: 1rem;
+    margin: 0;
+    
+}
+
+.error h1, .error h2 {
+    font-size: 30px;
+}
+
+
+
+.fa-facebook, .fa-instagram, .fa-twitter, .fa-github {
+    font-size: 40px;
+    padding: 1rem;
+    color: #0086b1;
+    cursor: pointer;
+    transition: color 0.6s ease;
+}
+
+
+
+.error h1 {
+    color: red;
+}
+
+.error h2 {
+    color: #fff;
+    letter-spacing: 1.1px;
+}
+
+.fa-facebook:hover, .fa-instagram:hover,  .fa-twitter:hover, .fa-github:hover{
+    
+    color: #fff;
+
+}
+
+.fa-facebook {
+    color: rgb(54, 54, 253);
+}
+
+.fa-instagram {
+    color: #84147c;
+}
+
+.fa-twitter {
+    color: #eb6328;
+
+}
+
+.fa-github {
+    color:  #adcf0b;
+}
+
+
+
+@media (min-width: 500px) {
+    
+    .intro h1 {
+        font-size: 60px;
+    }
+
+    
+    .intro img{
+        width: 480px;
+        margin-left: auto;
+        
+    }
+
+    .projects h1 {
+        font-size: 60px;
+    }
+
+    .about img {
+        width: 480px;
+        height: 405px;
+
+    }
+
+    .about p {
+        font-size: 18px;
+    }
+
+    .about h1 {
+        font-size: 60px;
+    }
+
+    .contact h1 {
+        font-size: 60px;
+    }
+
+    .error h1, .error h2 {
+        font-size: 40px;
+    }
+
+
+}
+
+
+
+@media (min-width: 768px) {
+    .intro {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .intro h1 {
+        padding-top: 5rem;
+        margin-right: auto;
+    }
+
+    .gallery {
+        justify-content: space-evenly;
+    }
+
+    .item {
+        width: 320px;
+    }
+
+    .item img {
+        width: 308px;
+    }
+    
+    .about {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .about img {
+        margin-top: 2.5rem;
+        margin-left: -5rem;
+    }
+
+    .fa-exclamation-triangle {
+        font-size: 80px;
+    }
+
+    .error h1, .error h2 {
+        font-size: 60px;
+    }
+
+    .error p {
+        font-size: 38px;
+    }
+
+    .fa-facebook, .fa-instagram, .fa-twitter, .fa-github {
+        font-size: 60px;
+        padding: 1.5rem;
+    }
+
+    .error button {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+}
+
+
+
+@media (min-width: 1029px) {
+    section {
+        max-width: 1200px;
+        margin: auto;
+    } 
+
+    .gallery {
+        justify-content: space-between;
+    }
+
+    .item-7 {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .item-7 img {
+        width: 400px;
+        margin-top: 1rem;
+        margin-left: 0.4rem;
+        margin-right: 1rem;
+    }
+
+    
+
+}

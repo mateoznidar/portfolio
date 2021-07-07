@@ -1,0 +1,56 @@
+
+/* ============================================= */
+/*              Buttons                          */
+/* ============================================= */
+
+.btn {
+    margin-top: 15px;
+    width: 100%;
+    color: #fff;
+    border: none;
+    padding: 10px 0;
+    text-transform: $upper;
+    border-radius: 5px;
+    &.default {
+      @include button($color-link-def-btn);
+    }
+    &.error {
+      @include button($color-btn-err);
+    }
+    &.info {
+      @include button(#927bc1);
+    }
+    &.success {
+      @include button(#63cc82);
+    }
+    &.warning {
+      @include button($color-warning);
+    }
+    
+  
+  }
+
+/* ============================================= */
+/*              Media Queries                    */
+/* ============================================= */
+@media (min-width: $break-lg) {
+
+
+  .btn {
+    padding: 10px 30px;
+  }
+  
+  .btn + .btn {
+    margin-left: 10px;
+  }
+  
+  .logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
+  
+  }
+  
+  
+  
+  
